@@ -13,6 +13,8 @@ class Blog extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMdx.edges
 
+    console.log('posts',posts)
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
