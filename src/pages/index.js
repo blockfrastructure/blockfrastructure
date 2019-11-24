@@ -30,41 +30,27 @@ class IndexPage extends React.Component {
         <p>
           Head over to our blog to learn about blockchain and staking, the risks and rewards of staking in blockchain networks.
         </p>
-
+        <h2>Our Supported Networks</h2>
         <StaticQuery
           query={kusamaImageQuery}
           render={data => {
-            console.log('data', data)
-            // return (
-            //   <Container>
-            //     <Image
-            //       fixed={data.avatar.childImageSharp.fixed}
-            //       alt={author}
-            //       style={{
-            //         marginRight: rhythm(1 / 2),
-            //         marginBottom: 0,
-            //         minWidth: 50,
-            //         borderRadius: `100%`,
-            //       }}
-            //       imgStyle={{
-            //         borderRadius: `50%`,
-            //       }}
-            //     />
-            //     <p>
-            //       Written by <strong>{author}</strong> who lives and works in Berlin and builds cool stuff!
-            //       {` `}
-            //       <a href={`https://twitter.com/${social.twitter}`}>
-            //         You should follow him on Twitter
-            //       </a>
-            //     </p>
-            //   </Container>
-            // )
+            return (
+              <div>
+                <Image
+                  fixed={data.file.childImageSharp.fixed}
+                  style={{
+                    marginBottom: 0,
+                    minWidth: 50,
+                    borderRadius: `100%`,
+                  }}
+                  imgStyle={{
+                    borderRadius: `50%`,
+                  }}
+                />
+              </div>
+            )
           }}
         />
-
-        <h2>Our Supported Networks</h2>
-
-        <p>Now go build something great!</p>
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link>
@@ -74,15 +60,17 @@ class IndexPage extends React.Component {
 }
 
 const kusamaImageQuery = graphql`
-  query {
-    kusama: file(absolutePath: { regex: "/kusama.jpg/" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
+query {
+  file(relativePath: { eq: "kusama.png" }) {
+    childImageSharp {
+      # Specify the image processing specifications right in the query.
+      # Makes it trivial to update as your page's design changes.
+      fixed(width: 125, height: 125) {
+        ...GatsbyImageSharpFixed
       }
     }
   }
+}
 `
 
 export default IndexPage
