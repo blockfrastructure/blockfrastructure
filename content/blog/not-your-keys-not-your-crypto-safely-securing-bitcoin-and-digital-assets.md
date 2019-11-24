@@ -20,5 +20,7 @@ Cold storage are physical hardware devices that store digital assets like bitcoi
 
 ![A NanoLedger Hardware Wallet](./ledger-nano.png)
 
+## Wrapup
 
+As technology changes the way we trade and invest in a new emerging asset class, we must understand the risks of use. Always store your digital assets in a hardware wallet and keep it somewhere safe. The only time you should have assets on the exchange is when you want to trade.
 
