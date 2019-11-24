@@ -12,9 +12,9 @@ Public and private keys are how users send transactions around on the bitcoin ne
 
 ## What happens if your hacked?
 
-Get hacked - Whaaat? If your funds on the exchange that gets hacked its possible that you may never see them again. There is no middleman gatekeeper (think paypal - which stores your funds between your bank and another party) in the bitcoin network that controls funds and says where they go. Therefore depending on the size of the hack - its possible the exchange would not have enough funds to cover the hack. In May of 2019 the largest crypto exchange in the world,  Therefore you should always secure your crypto in cold storage.
+Get hacked - Whaaat? If your funds on the exchange that gets hacked its possible that you may never see them again. There is no middleman gatekeeper (think paypal - which stores your funds between your bank and another party) in the bitcoin network that controls funds and says where they go. In May of 2019 Binance, the largest crypto exchange in the world was hacked and [$40 million worth of Bitcoin was stollen] (https://www.bloomberg.com/news/articles/2019-05-08/crypto-exchange-giant-binance-reports-a-hack-of-7-000-bitcoin). In this case, Binance covered the losses, however if it was a smaller exchange or a larger hack they may not have been able to afford the losses to pay back its users. Therefore you should always secure your crypto in cold storage.
 
-## Secure Assets in Cold Storage
+## Securing Assets in Cold Storage
 
 Cold storage are physical hardware devices that store digital assets like bitcoin. This is where you should store the larger part of your stash of crypto. It's a hardware wallet that plugs into your computer like a usb stick and can send and receive bitcoin. It's best to store this in a safety deposit box in a bank or a safe where you will not lose it. If this device is lost or stolen - your funds are gone.
 
