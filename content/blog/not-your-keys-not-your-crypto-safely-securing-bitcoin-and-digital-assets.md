@@ -17,3 +17,6 @@ Get hacked - Whaaat? If your funds on the exchange that gets hacked its possible
 ## Secure Assets in Cold Storage
 
 Cold storage are physical hardware devices that store digital assets like bitcoin. This is where you should store the larger part of your stash of crypto. It's a hardware wallet that plugs into your computer like a usb stick and can send and receive bitcoin. It's best to store this in a safety deposit box in a bank or a safe where you will not lose it. If this device is lost or stolen - your funds are gone.
+
+![A picture of a cute dog](./ledger-nano.png)
+
