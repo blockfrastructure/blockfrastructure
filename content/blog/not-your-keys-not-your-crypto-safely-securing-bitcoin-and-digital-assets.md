@@ -1,6 +1,6 @@
 ---
 path: /not-your-keys-not-your-crypto
-date: 2019-11-20T17:25:05.104Z
+date: 2019-11-24T17:25:05.104Z
 title: 'Not Your Keys, Not Your Crypto - Safely Securing Bitcoin and Digital Assets'
 description: Safely Securing Bitcoin and Digital Assets
 ---
@@ -22,5 +22,5 @@ Cold storage are physical hardware devices that store digital assets like bitcoi
 
 ## Wrapup
 
-As technology changes the way we trade and invest in a new emerging asset class, we must understand the risks and how to properly secure them. Always store your digital assets in a hardware wallet and keep it somewhere safe. The only time you should have assets on the exchange is when you want to trade.
+As technology changes the way we trade and invest in a new emerging asset class, we must understand the risks and how to properly safe keep them. Always store your digital assets in a hardware wallet and keep it somewhere safe. The only time you should have assets on the exchange is when you want to trade.
 
