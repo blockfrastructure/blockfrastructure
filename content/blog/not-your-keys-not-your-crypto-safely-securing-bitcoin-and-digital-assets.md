@@ -12,9 +12,7 @@ Public and private keys are how users send transactions around on the bitcoin ne
 
 ## What happens if your hacked?
 
-Get hacked - Whaaat? If your funds on the exchange that gets hacked its possible that you may never see them again. There is no middleman gatekeeper (think paypal - which stores your funds between your bank and another party) in the bitcoin network that controls funds and says where they go. Therefore depending on the size of the hack - its possible the exchange would not have enough funds to cover the hack. Therefore you should always secure your crypto in cold storage.
-
-
+Get hacked - Whaaat? If your funds on the exchange that gets hacked its possible that you may never see them again. There is no middleman gatekeeper (think paypal - which stores your funds between your bank and another party) in the bitcoin network that controls funds and says where they go. Therefore depending on the size of the hack - its possible the exchange would not have enough funds to cover the hack. In May of 2019 the largest crypto exchange in the world,  Therefore you should always secure your crypto in cold storage.
 
 ## Secure Assets in Cold Storage
 
