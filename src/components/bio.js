@@ -34,7 +34,7 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in Berlin and builds useful stuff!
+              Written by <strong>{author}</strong> who lives and works in Berlin and builds cool stuff!
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
                 You should follow him on Twitter
