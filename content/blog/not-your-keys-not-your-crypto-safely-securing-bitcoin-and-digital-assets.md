@@ -1,6 +1,6 @@
 ---
 path: /not-your-keys-not-your-crypto
-date: 2019-11-20T17:25:05.104Z
+date: 2019-11-24T17:25:05.104Z
 title: 'Not Your Keys, Not Your Crypto - Safely Securing Bitcoin and Digital Assets'
 description: Safely Securing Bitcoin and Digital Assets
 ---
