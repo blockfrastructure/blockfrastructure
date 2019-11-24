@@ -1,5 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql, StaticQuery } from "gatsby"
+import Image from "gatsby-image"
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,6 +10,8 @@ import Button from "../components/button"
 class IndexPage extends React.Component {
   render() {
     const siteTitle = "Blockfrastructure"
+
+    console.log('props', this.props)
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -26,6 +30,40 @@ class IndexPage extends React.Component {
         <p>
           Head over to our blog to learn about blockchain and staking, the risks and rewards of staking in blockchain networks.
         </p>
+
+        <StaticQuery
+          query={kusamaImageQuery}
+          render={data => {
+            console.log('data', data)
+            // return (
+            //   <Container>
+            //     <Image
+            //       fixed={data.avatar.childImageSharp.fixed}
+            //       alt={author}
+            //       style={{
+            //         marginRight: rhythm(1 / 2),
+            //         marginBottom: 0,
+            //         minWidth: 50,
+            //         borderRadius: `100%`,
+            //       }}
+            //       imgStyle={{
+            //         borderRadius: `50%`,
+            //       }}
+            //     />
+            //     <p>
+            //       Written by <strong>{author}</strong> who lives and works in Berlin and builds cool stuff!
+            //       {` `}
+            //       <a href={`https://twitter.com/${social.twitter}`}>
+            //         You should follow him on Twitter
+            //       </a>
+            //     </p>
+            //   </Container>
+            // )
+          }}
+        />
+
+        <h2>Our Supported Networks</h2>
+
         <p>Now go build something great!</p>
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
@@ -34,5 +72,17 @@ class IndexPage extends React.Component {
     )
   }
 }
+
+const kusamaImageQuery = graphql`
+  query {
+    kusama: file(absolutePath: { regex: "/kusama.jpg/" }) {
+      childImageSharp {
+        fixed(width: 50, height: 50) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
