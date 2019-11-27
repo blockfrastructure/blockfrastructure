@@ -36,7 +36,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
+        {/* <Bio />
 
         <ul
           style={{
@@ -61,7 +61,8 @@ class BlogPostTemplate extends React.Component {
               </Link>
             )}
           </li>
-        </ul>
+        </ul> */}
+        BTC: 3AJZ8BzHAFLDQ8hsMXQjcJB5CxrcRBmBSe
       </Layout>
     )
   }

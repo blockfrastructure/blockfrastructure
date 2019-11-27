@@ -15,8 +15,6 @@ class IndexPage extends React.Component {
   render() {
     const siteTitle = "Blockfrastructure"
 
-    console.log('props', this.props, styles)
-
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO

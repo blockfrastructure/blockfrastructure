@@ -11,6 +11,7 @@ class Blog extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMdx.edges
+    console.log('posts', posts)
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -19,7 +20,7 @@ class Blog extends React.Component {
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             //TODO: Just showing first blog 
-            if (node.excerpt === "You are new to bitcoin and want to buy some crypto. You head over to an exchange like Coinbase or Binance and create an account. You create…") {
+            if (node.frontmatter.title === "Not Your Keys, Not Your Crypto - Safely Securing Bitcoin and Digital Assets") {
               return (
                 <div key={node.fields.slug}>
                   <h3
