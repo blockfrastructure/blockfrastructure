@@ -33,7 +33,7 @@ class IndexPage extends React.Component {
         <p>
           Head over to our blog to learn about blockchain and staking, the risks and rewards of staking in blockchain networks.
         </p>
-        <h2>Our Supported Networks 👷💻</h2>
+        <h2>Our Supported Networks </h2>
         <StaticQuery
           query={kusamaImageQuery}
           render={data => {
@@ -44,8 +44,9 @@ class IndexPage extends React.Component {
                     fixed={data.file.childImageSharp.fixed}
                     style={{
                       marginBottom: 0,
-                      minWidth: 250,
+                      minWidth: 150,
                       borderRadius: `100%`,
+                      background: 'gray'
                     }}
                     imgStyle={{
                       borderRadius: `50%`,
@@ -71,7 +72,7 @@ query {
     childImageSharp {
       # Specify the image processing specifications right in the query.
       # Makes it trivial to update as your page's design changes.
-      fixed(width: 950, height: 650) {
+      fixed(width: 150, height: 150) {
         ...GatsbyImageSharpFixed
       }
     }
