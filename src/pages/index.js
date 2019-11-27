@@ -47,6 +47,7 @@ class IndexPage extends React.Component {
                     borderRadius: `50%`,
                   }}
                 />
+                <div>Kusama</div>
               </div>
             )
           }}

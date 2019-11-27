@@ -17,8 +17,6 @@ class Blog extends React.Component {
         <SEO title="All posts" />
         <div style={{ margin: "20px 0 40px" }}>
           {posts.map(({ node }) => {
-            console.log('index', node)
-
             const title = node.frontmatter.title || node.fields.slug
             //TODO: Just showing first blog 
             if (node.excerpt === "You are new to bitcoin and want to buy some crypto. You head over to an exchange like Coinbase or Binance and create an account. You create…") {
