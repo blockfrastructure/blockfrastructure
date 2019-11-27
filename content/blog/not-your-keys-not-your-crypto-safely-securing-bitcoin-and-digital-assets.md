@@ -4,11 +4,11 @@ date: 2019-11-24T17:25:05.104Z
 title: 'Not Your Keys, Not Your Crypto - Safely Securing Bitcoin and Digital Assets'
 description: Safely Securing Bitcoin and Digital Assets
 ---
-You are new to bitcoin world and want to buy some crypto. You head over to an exchange like Coinbase or Binance and create an account. You create this thing called a wallet which generates a public and a private key and then purchase bitcoin from the exchange. Shortly after you have bitcoin in your wallet - but what does that actually mean? 
+You are new to bitcoin and want to buy some crypto. You head over to an exchange like Coinbase or Binance and create an account. You create something called a wallet which generates a public and a private key and then purchase bitcoin from the exchange. Shortly after you have bitcoin in your wallet - but what does that actually mean? 
 
 ## Public Keys and Private Keys
 
-Public and private keys are how users send transactions around on the bitcoin network. Your public key is where you tell your friends to send your money to. Your private key is what signs the transaction when you are sending bitcoin - it's basically your password to send money to another user or address. Think of it public and private keys like a shared post office mailbox - everyone knows your address to send mail to, but only you have the private key to open the box. Therefore, if anyone has access to your private key, they can access everything in your bitcoin wallet. To complicate matters, if you keep your bitcoin on an exchange(coinbase) you are at a higher risk to get hacked.
+Public and private keys are how users send and receive bitcoin on the network. A public key is a wallet address, or where you tell you friends to send bitcoin to. When you purchased bitcoin from the exchange, the exchange sent you bitcoin to your wallet address. A private key is what signs the transaction when you  send bitcoin, it's basically your password to send assets to another user or address. Think of it like a shared post office mailbox - everyone knows your address to send mail to, but only you have the private key to open the box. Therefore, if anyone has access to your private key, they have access everything in your bitcoin wallet. If you store your bitcoin on an exchange or wallet, you are storing your assets in a **hot wallet.**  A hot wallet is any wallet that is connected to the internet. Hot wallets are more susceptible to getting hacked.
 
 ## What happens if you are hacked?
 
@@ -16,7 +16,7 @@ Get hacked - Whaaat? If you store your digital assets on an exchange that gets h
 
 ## Securing Assets in Cold Storage
 
-Cold storage are physical hardware devices that store digital assets like bitcoin. This is where you should store the larger part of your stash of crypto. It's a hardware wallet that plugs into your computer like a usb stick and can send and receive bitcoin. It's best to store this in a safety deposit box in a bank or a safe where you will not lose it. If this device is lost or stolen - your funds are gone.
+Cold storage are physical hardware devices with wallets that store digital assets like bitcoin. This is where you should store the largest part of your crypto stash. It's a hardware wallet that plugs into your computer like a usb stick and can send and receive bitcoin. It's best to store this in a safety deposit box in a bank or a safe where you will not lose it. If this device is lost or stolen - your funds are gone.
 
 ![A NanoLedger Hardware Wallet](./ledger-nano.png)
 
