@@ -16,7 +16,7 @@ Get hacked - Whaaat? If you store your digital assets on an exchange that gets h
 
 ## Securing Assets in Cold Storage
 
-Cold storage is a physical hardware device with a wallet that store digital assets like bitcoin. This is where you should store the largest part of your crypto stash. It's a hardware wallet that plugs into your computer like a usb stick and can send and receive bitcoin(or other coins). It's best to store this in a safety deposit box in a bank or a safe where you will not lose it. If this device is lost or stolen, burned in a fire, or lost in your laundry basket - ciao your funds are gone. However, some hardware wallets such as a Ledger Nano allow you to recover your lost or destroyed device with a 24 word mnemonic phrase.
+Cold storage is a physical hardware device with a wallet that stores digital assets like bitcoin. This is where you should store the largest part of your crypto stash. It's a hardware wallet that plugs into your computer like a usb stick and can send and receive bitcoin(or other coins). It's best to store this in a safety deposit box in a bank or a safe where you will not lose it. If this device is lost or stolen, burned in a fire, or lost in your laundry basket - ciao your funds are gone. However, some hardware wallets such as a Ledger Nano allow you to recover your lost or destroyed device with a 24 word mnemonic phrase.
 
 ![A NanoLedger Hardware Wallet](./ledger-nano.png)
 
