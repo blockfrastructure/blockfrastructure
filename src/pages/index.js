@@ -28,7 +28,7 @@ class IndexPage extends React.Component {
             👋
           </span>
         </h1>
-        <p>Welcome to Blockfrastructure! We provide staking infrastructure and tooling for token holders of stake-based blockchains. We are under active development so stay tuned!
+        <p>Welcome to Blockfrastructure! We provide staking infrastructure and tooling for token holders of stake-based blockchains. <strong>We are under active development so stay tuned!</strong>
         </p>
         <p>
           Head over to our blog to learn about blockchain and staking, the risks and rewards of staking in blockchain networks.
@@ -52,9 +52,9 @@ class IndexPage extends React.Component {
                       borderRadius: `50%`,
                     }}
                   />
-                <div>Kusama</div>
+                  <div>Kusama</div>
                 </div>
-                  
+
               </div>
             )
           }}
