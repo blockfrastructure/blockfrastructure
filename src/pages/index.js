@@ -33,7 +33,7 @@ class IndexPage extends React.Component {
         <p>
           Head over to our blog to learn about blockchain and staking, the risks and rewards of staking in blockchain networks.
         </p>
-        <h2>Under Developement</h2>
+        <h2>Under Development</h2>
         <StaticQuery
           query={kusamaImageQuery}
           render={data => {
