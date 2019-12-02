@@ -1,15 +1,12 @@
 import React from "react"
 import { Link, graphql, StaticQuery } from "gatsby"
 import Image from "gatsby-image"
-import classNames from 'classnames';
-
 
 import styles from './index.module.css';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 
-const cx = classNames.bind(styles)
 
 class IndexPage extends React.Component {
   render() {

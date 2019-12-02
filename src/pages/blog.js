@@ -44,7 +44,7 @@ class Blog extends React.Component {
                 </div>
               )
             }
-
+            return null;
           })}
         </div>
         <Link to="/">
