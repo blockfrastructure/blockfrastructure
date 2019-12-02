@@ -19,7 +19,7 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Home"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={[`staking`, `blockchain`, `digital`, `asset`, `bitcoin`]}
         />
         {/* <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" /> */}
         <h1>
@@ -33,7 +33,7 @@ class IndexPage extends React.Component {
         <p>
           Head over to our blog to learn about blockchain and staking, the risks and rewards of staking in blockchain networks.
         </p>
-        <h2>Our Supported Networks </h2>
+        <h2>Under Developement</h2>
         <StaticQuery
           query={kusamaImageQuery}
           render={data => {
