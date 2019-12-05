@@ -3,8 +3,8 @@ module.exports = {
     // edit below
     title: `Blockfrastructure's Blog`,
     author: `Mark Hinschberger`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Staking infrastructure and tooling for token holders of stake-based blockchains`,
+    siteUrl: `https://www.blockfrastructure.com/`,
     social: {
       twitter: `mark_is_here`,
     },
