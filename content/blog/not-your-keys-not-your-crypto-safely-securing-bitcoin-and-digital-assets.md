@@ -3,6 +3,7 @@ path: /not-your-keys-not-your-crypto
 date: 2019-11-24T17:25:05.104Z
 title: 'Not Your Keys, Not Your Crypto - Safely Securing Bitcoin and Digital Assets'
 description: Safely Securing Bitcoin and Digital Assets
+ogimage: './ledger-nano.png'
 ---
 You are new to bitcoin and want to buy some crypto. You head over to an exchange like Coinbase or Binance and create an account. You create something called a wallet which generates a public and a private key and then purchase bitcoin from the exchange. Shortly after you have bitcoin in your wallet - but what does that actually mean? 
 

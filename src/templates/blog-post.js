@@ -10,7 +10,9 @@ import { rhythm, scale } from "../utils/typography"
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.mdx
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const siteTitle = this.props.data.site.siteMetadata.title;
+    const { ogimage } = post.frontmatter
+    const ogImagePath = ogimage && ogimage.childImageSharp.fixed.src
     // const { previous, next } = this.props.pageContext
 
     return (
@@ -18,6 +20,7 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          image={ogImagePath}
         />
         <h1>{post.frontmatter.title}</h1>
         <p
@@ -62,6 +65,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul> */}
+        <div>Support this site</div>
         BTC: 3AJZ8BzHAFLDQ8hsMXQjcJB5CxrcRBmBSe
       </Layout>
     )
@@ -86,6 +90,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        ogimage {
+          childImageSharp {
+            fixed {
+              src
+            }
+          }
+        }
       }
     }
   }
