@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql, StaticQuery } from "gatsby"
-import Image from "gatsby-image"
 
 import styles from './index.module.css';
 import Layout from "../components/layout"
@@ -18,7 +17,6 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`staking`, `blockchain`, `digital`, `asset`, `bitcoin`]}
         />
-        {/* <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" /> */}
         <h1>
           Hey people{" "}
           <span role="img" aria-label="wave emoji">
@@ -37,18 +35,7 @@ class IndexPage extends React.Component {
             return (
               <div className={styles.supported_network_container}>
                 <div className={styles.home_image_wrapper}>
-                  <Image
-                    fixed={data.file.childImageSharp.fixed}
-                    style={{
-                      marginBottom: 0,
-                      minWidth: 150,
-                      borderRadius: `100%`,
-                      background: 'gray'
-                    }}
-                    imgStyle={{
-                      borderRadius: `50%`,
-                    }}
-                  />
+                  <img alt="Kusama Network" style={{ height: '150px', width: '150px', borderRadius: '50%', border: '1px solid black' }} src={data.file.childImageSharp.fluid.src} />
                   <div>Kusama</div>
                 </div>
 
@@ -65,12 +52,14 @@ class IndexPage extends React.Component {
 }
 const kusamaImageQuery = graphql`
 query {
-  file(relativePath: { eq: "kusama.png" }) {
+  file(relativePath: {eq: "kusama.png"}) {
     childImageSharp {
-      # Specify the image processing specifications right in the query.
-      # Makes it trivial to update as your page's design changes.
-      fixed(width: 150, height: 150) {
-        ...GatsbyImageSharpFixed
+      fluid {
+        aspectRatio
+        base64
+        src
+        srcSet
+        sizes
       }
     }
   }
