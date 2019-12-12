@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-absurd",
+  "name": "blockfrastructure",
   "private": true,
-  "description": "An absurd starter for Gatsby",
+  "description": "We provide staking infrastructure and tooling for staking-based blockchains",
   "version": "0.1.0",
-  "author": "Ajay NS <ajay.ns@outlook.com>",
+  "author": "Mark Hinschberger",
   "dependencies": {
     "@svgr/webpack": "^4.1.0",
     "gatsby": "^2.0.76",
