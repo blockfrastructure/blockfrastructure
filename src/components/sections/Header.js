@@ -31,8 +31,6 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                <div style={{ marginBottom: '5px' }}>Blockfrastructure</div>
-                <br />
                 Earn a
                 <br />
                 passive income

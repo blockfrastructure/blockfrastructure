@@ -26,8 +26,8 @@ export const NavListWrapper = styled.div`
     flex-direction: row;
 
     ${({ mobile }) =>
-      mobile &&
-      `
+    mobile &&
+    `
         flex-direction: column;
         margin-top: 1em;
 
@@ -64,6 +64,7 @@ export const MobileMenu = styled.div`
 
 export const Brand = styled.div`
   font-family: ${props => props.theme.font.primary};
+  color: white;
   ${props => props.theme.font_size.large};
 `;
 
