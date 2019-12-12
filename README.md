@@ -40,7 +40,7 @@ This starter is a fork of Gatsby Starter Blog, the most popular starter by far �
 
     Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-## 🎓 Learning Gatsby
+## 🎓 Learning Gatsby s
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
 
