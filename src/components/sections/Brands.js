@@ -9,12 +9,6 @@ import ExternalLink from '@common/ExternalLink';
 import { ReactComponent as KusamaLogo } from '@images/logos/kusama.svg';
 import { ReactComponent as CosmosLogo } from '@images/logos/cosmos.svg';
 
-import { ReactComponent as AirbnbLogo } from '@images/logos/airbnb.svg';
-import { ReactComponent as AppleMusicLogo } from '@images/logos/apple-music.svg';
-import { ReactComponent as CokeLogo } from '@images/logos/coca-cola.svg';
-import { ReactComponent as NodeLogo } from '@images/logos/nodejs.svg';
-import { ReactComponent as NikeLogo } from '@images/logos/nike.svg';
-import { ReactComponent as InstagramLogo } from '@images/logos/instagram.svg';
 
 const LOGOS = [
   {
@@ -24,31 +18,7 @@ const LOGOS = [
   {
     logo: CosmosLogo,
     link: 'https://cosmos.network/'
-  },
-  {
-    logo: AirbnbLogo,
-    link: 'https://airbnb.io',
-  },
-  {
-    logo: AppleMusicLogo,
-    link: 'https://www.apple.com/in/music/',
-  },
-  // {
-  //   logo: CokeLogo,
-  //   link: 'https://coca-cola.com',
-  // },
-  // {
-  //   logo: NodeLogo,
-  //   link: 'https://nodejs.org',
-  // },
-  // {
-  //   logo: NikeLogo,
-  //   link: 'https://nike.com',
-  // },
-  // {
-  //   logo: InstagramLogo,
-  //   link: 'https://instagram.com',
-  // },
+  }
 ];
 
 const UsedBy = () => (
@@ -81,10 +51,10 @@ const UsedBy = () => (
       <Section id="brands" accent>
         <StyledContainer>
           <div>
-            <h1>Currently Staked on</h1>
+            <h1>Currently Staking on</h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
-                <ExternalLink style={{ height: '150px' }} key={link} href={link}>
+                <ExternalLink style={{ padding: '10px', height: '200px', width: '200px', borderRadius: '50%', border: '1px solid black', display: 'flex', justifyContent: 'center', flexDirection: 'column' }} key={link} href={link}>
                   {logo()}
                 </ExternalLink>
               ))}
