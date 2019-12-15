@@ -6,6 +6,9 @@ import Img from 'gatsby-image';
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
+import { ReactComponent as KusamaLogo } from '@images/logos/kusama.svg';
+import { ReactComponent as CosmosLogo } from '@images/logos/cosmos.svg';
+
 import { ReactComponent as AirbnbLogo } from '@images/logos/airbnb.svg';
 import { ReactComponent as AppleMusicLogo } from '@images/logos/apple-music.svg';
 import { ReactComponent as CokeLogo } from '@images/logos/coca-cola.svg';
@@ -15,6 +18,14 @@ import { ReactComponent as InstagramLogo } from '@images/logos/instagram.svg';
 
 const LOGOS = [
   {
+    logo: KusamaLogo,
+    link: 'https://kusama.network/'
+  },
+  {
+    logo: CosmosLogo,
+    link: 'https://cosmos.network/'
+  },
+  {
     logo: AirbnbLogo,
     link: 'https://airbnb.io',
   },
@@ -22,22 +33,22 @@ const LOGOS = [
     logo: AppleMusicLogo,
     link: 'https://www.apple.com/in/music/',
   },
-  {
-    logo: CokeLogo,
-    link: 'https://coca-cola.com',
-  },
-  {
-    logo: NodeLogo,
-    link: 'https://nodejs.org',
-  },
-  {
-    logo: NikeLogo,
-    link: 'https://nike.com',
-  },
-  {
-    logo: InstagramLogo,
-    link: 'https://instagram.com',
-  },
+  // {
+  //   logo: CokeLogo,
+  //   link: 'https://coca-cola.com',
+  // },
+  // {
+  //   logo: NodeLogo,
+  //   link: 'https://nodejs.org',
+  // },
+  // {
+  //   logo: NikeLogo,
+  //   link: 'https://nike.com',
+  // },
+  // {
+  //   logo: InstagramLogo,
+  //   link: 'https://instagram.com',
+  // },
 ];
 
 const UsedBy = () => (
@@ -54,6 +65,16 @@ const UsedBy = () => (
             }
           }
         }
+        kusama_logo: file(
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "kusama" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
       }
     `}
     render={data => (
@@ -63,7 +84,7 @@ const UsedBy = () => (
             <h1>Currently Staked on</h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
-                <ExternalLink key={link} href={link}>
+                <ExternalLink style={{ height: '150px' }} key={link} href={link}>
                   {logo()}
                 </ExternalLink>
               ))}
@@ -110,7 +131,7 @@ const Art = styled.figure`
   width: 600px;
   position: absolute;
   top: -12%;
-  right: 50%;
+  right: 60%;
 
   @media (max-width: ${props => props.theme.screen.lg}) {
     top: 0;
