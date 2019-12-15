@@ -50,7 +50,8 @@ const About = () => (
             <div>
               <h2>Be ahead of the curve</h2>
               <p>
-                Earn crypto for supporting validators of blockchain networks. Stake with us to build the future of decentralized finance.
+                Earn crypto for supporting validators of blockchain networks.
+                Stake with us to build the future of decentralized finance.
               </p>
             </div>
             <Art>
@@ -64,7 +65,8 @@ const About = () => (
             <div>
               <h2>The fastest way to earn crypto</h2>
               <p>
-                Earn returns of 7-12% annual on your deposit for staking with us. Create savings and build for the future.
+                Earn returns of 7-12% annual on your deposit for staking with
+                us. Create savings and build for the future.
               </p>
             </div>
           </Grid>
@@ -119,8 +121,8 @@ const Grid = styled.div`
     }
 
     ${props =>
-    props.inverse &&
-    `
+      props.inverse &&
+      `
         ${Art} {
           order: 2;
         }

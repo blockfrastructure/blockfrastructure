@@ -9,16 +9,15 @@ import ExternalLink from '@common/ExternalLink';
 import { ReactComponent as KusamaLogo } from '@images/logos/kusama.svg';
 import { ReactComponent as CosmosLogo } from '@images/logos/cosmos.svg';
 
-
 const LOGOS = [
   {
     logo: KusamaLogo,
-    link: 'https://kusama.network/'
+    link: 'https://kusama.network/',
   },
   {
     logo: CosmosLogo,
-    link: 'https://cosmos.network/'
-  }
+    link: 'https://cosmos.network/',
+  },
 ];
 
 const UsedBy = () => (
@@ -54,7 +53,20 @@ const UsedBy = () => (
             <h1>Currently Staking on</h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
-                <ExternalLink style={{ padding: '10px', height: '200px', width: '200px', borderRadius: '50%', border: '1px solid black', display: 'flex', justifyContent: 'center', flexDirection: 'column' }} key={link} href={link}>
+                <ExternalLink
+                  style={{
+                    padding: '10px',
+                    height: '200px',
+                    width: '200px',
+                    borderRadius: '50%',
+                    border: '2px solid white',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexDirection: 'column',
+                  }}
+                  key={link}
+                  href={link}
+                >
                   {logo()}
                 </ExternalLink>
               ))}
