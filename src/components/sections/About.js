@@ -48,10 +48,10 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Be ahead of the curve</h2>
+              <h2>The fastest way to earn crypto</h2>
               <p>
-                Earn crypto for supporting validators of blockchain networks.
-                Stake with us to build the future of decentralized finance.
+                Earn returns of 7-12% annual on your deposit for staking with
+                us. Create savings and build for the future.
               </p>
             </div>
             <Art>
@@ -63,22 +63,22 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>The fastest way to earn crypto</h2>
+              <h2>Be ahead of the curve</h2>
               <p>
-                Earn returns of 7-12% annual on your deposit for staking with
-                us. Create savings and build for the future.
+                Earn crypto for supporting validators of blockchain networks.
+                Stake with us to build the future of decentralized finance.
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Build your portolio</h2>
+              <h2>Compound your Crypto</h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
+                Rather than having your assets sit in a wallet and not gain interest,
+                increase your positions through staking.
                 <br />
                 <br />
-                Gatsby is fast in every way that matters.
+                Your stake is safe with us
               </p>
             </div>
             <Art>
@@ -121,8 +121,8 @@ const Grid = styled.div`
     }
 
     ${props =>
-      props.inverse &&
-      `
+    props.inverse &&
+    `
         ${Art} {
           order: 2;
         }
