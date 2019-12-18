@@ -48,9 +48,9 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>The fastest way to earn crypto</h2>
+              <h2>The simplest way to earn crypto</h2>
               <p>
-                Earn returns of 7-12% annual on your deposit for staking with
+                Earn returns up to 12% annually on your deposit for staking with
                 us. Create savings and build for the future.
               </p>
             </div>
@@ -66,19 +66,22 @@ const About = () => (
               <h2>Be ahead of the curve</h2>
               <p>
                 Earn crypto for supporting validators of blockchain networks.
-                Stake with us to build the future of decentralized finance.
+                Stake with us to build the future we deserve.
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Compound your Crypto</h2>
+              <h2>Build the Future</h2>
               <p>
-                Rather than having your assets sit in a wallet and not gain interest,
-                increase your positions through staking.
+                We believe in helping to build out a future we would want ot live in. 
+                To help accomplish this goal we will be allotting 10% of our profits towards
+                OSS (open source software) this is not only limited to blockchain projects, beach and 
+                forest cleanups, and educating more people.
                 <br />
                 <br />
-                Your stake is safe with us
+                Join us on this endeavor. 
+                {/* TODO: add in a page to better explain this */}
               </p>
             </div>
             <Art>
