@@ -23,8 +23,7 @@ const FAQS = [
       <>
         Staking is the process of holding funds in a cryptocurrency wallet to support opertions of a blockchain network.
         It locks the curreny in a wallet to review rewards. The concept of staking is closely related to Proof of Stake.
-        You can learn more about that
-        <ExternalLink href="https://en.wikipedia.org/wiki/Proof_of_stake">here.</ExternalLink>.
+        You can learn more about that <ExternalLink href="https://en.wikipedia.org/wiki/Proof_of_stake">here.</ExternalLink>
       </>
     ),
   },
