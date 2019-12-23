@@ -2,11 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'An absurd gatsby starter',
-  title: 'Absurd',
+  description: 'Staking infrastructure and tooling for token holders of stake-based blockchains',
+  title: 'Blockfrastructure',
   url: '',
   author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
+  keywords: ['staking', 'cryptocurrency', 'investing', 'blockchain', 'bitcoin', 'blockfrastructure'],
   twitter: {
     id: '@ajayns08',
     img: '',

@@ -57,8 +57,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `Blockfrastructure`,
+        short_name: `blockfrastructure`,
         start_url: `/`,
         background_color: `#8bd8ed`,
         theme_color: `#8bd8ed`,
