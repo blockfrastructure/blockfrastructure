@@ -52,12 +52,16 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Absurd</h2>
+              <h2>Blockfrastructure</h2>
               <span>
                 Illustrations by
                 {` `}
                 <ExternalLink href="https://twitter.com/diana_valeanu">
                   @diana_valeanu
+                </ExternalLink>
+                <br />
+                <ExternalLink href="https://absurd.design/">
+                  Abusrd.design
                 </ExternalLink>
               </span>
             </Copyright>

@@ -6,41 +6,21 @@ import Img from 'gatsby-image';
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-import { ReactComponent as AirbnbLogo } from '@images/logos/airbnb.svg';
-import { ReactComponent as AppleMusicLogo } from '@images/logos/apple-music.svg';
-import { ReactComponent as CokeLogo } from '@images/logos/coca-cola.svg';
-import { ReactComponent as NodeLogo } from '@images/logos/nodejs.svg';
-import { ReactComponent as NikeLogo } from '@images/logos/nike.svg';
-import { ReactComponent as InstagramLogo } from '@images/logos/instagram.svg';
+import { ReactComponent as KusamaLogo } from '@images/logos/kusama.svg';
+import { ReactComponent as CosmosLogo } from '@images/logos/cosmos.svg';
 
 const LOGOS = [
   {
-    logo: AirbnbLogo,
-    link: 'https://airbnb.io',
+    logo: KusamaLogo,
+    link: 'https://kusama.network/',
   },
   {
-    logo: AppleMusicLogo,
-    link: 'https://www.apple.com/in/music/',
-  },
-  {
-    logo: CokeLogo,
-    link: 'https://coca-cola.com',
-  },
-  {
-    logo: NodeLogo,
-    link: 'https://nodejs.org',
-  },
-  {
-    logo: NikeLogo,
-    link: 'https://nike.com',
-  },
-  {
-    logo: InstagramLogo,
-    link: 'https://instagram.com',
+    logo: CosmosLogo,
+    link: 'https://cosmos.network/',
   },
 ];
 
-const UsedBy = () => (
+const Staked = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -54,16 +34,39 @@ const UsedBy = () => (
             }
           }
         }
+        kusama_logo: file(
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "kusama" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
       }
     `}
     render={data => (
       <Section id="brands" accent>
         <StyledContainer>
           <div>
-            <h1>Currently Staked on</h1>
+            <h1>Currently Staking on</h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
-                <ExternalLink key={link} href={link}>
+                <ExternalLink
+                  style={{
+                    padding: '10px',
+                    height: '200px',
+                    width: '200px',
+                    borderRadius: '50%',
+                    border: '2px solid white',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexDirection: 'column',
+                  }}
+                  key={link}
+                  href={link}
+                >
                   {logo()}
                 </ExternalLink>
               ))}
@@ -110,7 +113,7 @@ const Art = styled.figure`
   width: 600px;
   position: absolute;
   top: -12%;
-  right: 50%;
+  right: 60%;
 
   @media (max-width: ${props => props.theme.screen.lg}) {
     top: 0;
@@ -123,4 +126,4 @@ const Art = styled.figure`
   }
 `;
 
-export default UsedBy;
+export default Staked;

@@ -48,9 +48,10 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Be ahead of the curve</h2>
+              <h2>The simplest way to earn crypto</h2>
               <p>
-                Earn crypto for supporting validators of blockchain networks. Stake with us to build the future of decentralized finance.
+                Earn returns up to 12% annually on your deposit for staking with
+                us. Create savings and build for the future.
               </p>
             </div>
             <Art>
@@ -62,21 +63,25 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>The fastest way to earn crypto</h2>
+              <h2>Be ahead of the curve</h2>
               <p>
-                Earn returns of 7-12% annual on your deposit for staking with us. Create savings and build for the future.
+                Earn crypto for supporting validators of blockchain networks.
+                Stake with us to build the future we deserve.
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Build your portolio</h2>
+              <h2>Build the Future</h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
+                We believe in helping to build out a future we would want ot live in. 
+                To help accomplish this goal we will be allotting 10% of our profits towards
+                OSS (open source software) this is not only limited to blockchain projects, beach and 
+                forest cleanups, and educating more people.
                 <br />
                 <br />
-                Gatsby is fast in every way that matters.
+                Join us on this endeavor. 
+                {/* TODO: add in a page to better explain this */}
               </p>
             </div>
             <Art>

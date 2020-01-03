@@ -93,9 +93,7 @@ const Grid = styled.div`
 const Text = styled.div`
   justify-self: center;
   color: white;
-  font-family: 'Open Sans'
-
-  @media (max-width: ${props => props.theme.screen.md}) {
+  font-family: 'Open Sans' @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: start;
   }
 `;
