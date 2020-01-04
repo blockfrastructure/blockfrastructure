@@ -59,19 +59,15 @@ const Footer = () => (
                 <ExternalLink href="https://twitter.com/diana_valeanu">
                   @diana_valeanu
                 </ExternalLink>
-                <br />
-                <ExternalLink href="https://absurd.design/">
-                  Abusrd.design
-                </ExternalLink>
               </span>
             </Copyright>
-            <SocialIcons>
+            {/* <SocialIcons>
               {SOCIAL.map(({ icon, link }) => (
                 <ExternalLink key={link} href={link}>
                   <img src={icon} alt="link" />
                 </ExternalLink>
               ))}
-            </SocialIcons>
+            </SocialIcons> */}
           </StyledContainer>
         </FooterWrapper>
       </React.Fragment>
