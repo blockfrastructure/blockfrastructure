@@ -10,6 +10,8 @@ import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
 
+
+// TODO: Add soon
 const SOCIAL = [
   {
     icon: GithubIcon,
@@ -68,6 +70,10 @@ const Footer = () => (
                 </ExternalLink>
               ))}
             </SocialIcons> */}
+            <ContactUs>
+              <ExternalLink href="mailto:blockfrastructure@gmail.com?Subject=Hello" target="_top">Contact Us</ExternalLink>
+
+            </ContactUs>
           </StyledContainer>
         </FooterWrapper>
       </React.Fragment>
@@ -88,6 +94,16 @@ const SocialIcons = styled.div`
     margin-top: 40px;
   }
 `;
+
+const ContactUs = styled.div`
+  font-family: ${props => props.theme.font.secondary};
+  ${props => props.theme.font_size.small};
+  color: ${props => props.theme.color.black.regular};
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+`
 
 const FooterWrapper = styled.footer`
   background-color: ${props => props.theme.color.primary};
