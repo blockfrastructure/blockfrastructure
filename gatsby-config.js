@@ -1,163 +1,89 @@
+const path = require('path');
+
 module.exports = {
-  siteMetadata: {
-    // edit below
-    title: `Blockfrastructure's Blog`,
-    author: `Mark Hinschberger`,
-    description: `Staking infrastructure and tooling for token holders of stake-based blockchains`,
-    siteUrl: `https://www.blockfrastructure.com/`,
-    social: {
-      twitter: `mark_is_here`,
-    },
-  },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
+      // The property ID; the tracking code won't be generated without it
+      trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "NO GA",
+      head: false,
+      // Setting this parameter is optional
+      anonymize: true,
+      // Setting this parameter is also optional
+      respectDNT: true,
+      // Avoids sending pageview hits from custom paths
+      exclude: ["/preview/**", "/do-not-track/me/too/"],
+      // Delays sending pageview hits on route update (in milliseconds)
+      pageTransitionDelay: 0,
+      // Enables Google Optimize using your container Id
+      // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+      // // Enables Google Optimize Experiment ID
+      // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+      // // Set Variation ID. 0 for original 1,2,3....
+      // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+      // Any additional optional fields
+      sampleRate: 5,
+      siteSpeedSampleRate: 10,
+      cookieDomain: "blockfrastructure.com",
+    },
+    {
+      resolve: `gatsby-plugin-svgr`,
       options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "NO GA",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        // head: false,
-        // // Setting this parameter is optional
-        // anonymize: true,
-        // // Setting this parameter is also optional
-        // respectDNT: true,
-        // // Avoids sending pageview hits from custom paths
-        // exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // // Delays sending pageview hits on route update (in milliseconds)
-        // pageTransitionDelay: 0,
-        // // Enables Google Optimize using your container Id
-        // // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-        // // Enables Google Optimize Experiment ID
-        // // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
-        // // Set Variation ID. 0 for original 1,2,3....
-        // // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
-        // // Any additional optional fields
-        // sampleRate: 5,
-        // siteSpeedSampleRate: 10,
-        // cookieDomain: "blockfrastructure.com",
+        svgoConfig: {
+          plugins: {
+            removeViewBox: false,
+          },
+        },
       },
     },
-
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `team`,
+        path: `${__dirname}/src/images/team`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `art`,
+        path: `${__dirname}/src/images/art`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-material-ui`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [".mdx", ".md"],
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-vscode`,
-          },
-          {
-            resolve: `gatsby-remark-copy-linked-files`,
-          },
-          {
-            resolve: `gatsby-remark-smartypants`,
-          },
-        ],
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Blockfrastructure`,
+        short_name: `blockfrastructure`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `#8bd8ed`,
+        theme_color: `#8bd8ed`,
         display: `minimal-ui`,
-        // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `static/favicon.svg`,
       },
     },
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        fonts: [`average`, `prata\:400,700`],
       },
     },
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: `gatsby-plugin-alias-imports`,
       options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  data: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.body }],
-                })
-              })
-            },
-            query: `
-            {
-              allMdx(
-                limit: 1000,
-                sort: { order: DESC, fields: [frontmatter___date] },
-              ) {
-                edges {
-                  node {
-                    fields { slug }
-                    frontmatter {
-                      title
-                      date
-                    }
-                    body
-                  }
-                }
-              }
-            }
-            `,
-            output: "/rss.xml",
-            title: `Gatsby RSS feed`,
-          },
-        ],
+        alias: {
+          '@components': path.resolve(__dirname, 'src/components'),
+          '@common': path.resolve(__dirname, 'src/components/common'),
+          '@images': path.resolve(__dirname, 'src/images'),
+          '@sections': path.resolve(__dirname, 'src/components/sections'),
+          '@styles': path.resolve(__dirname, 'src/styles/'),
+          '@static': path.resolve(__dirname, 'static/'),
+        },
       },
     },
   ],
-}
+};
