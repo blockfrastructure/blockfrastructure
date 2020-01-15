@@ -2,7 +2,6 @@ const path = require('path');
 
 module.exports = {
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       // The property ID; the tracking code won't be generated without it
@@ -37,6 +36,8 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-react-helmet`,
+
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
