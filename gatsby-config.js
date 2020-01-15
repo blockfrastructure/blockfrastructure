@@ -1,11 +1,13 @@
 const path = require('path');
+// const { GOOGLE_ANALYTICS_TRACKING_ID } = process.env;
+// require('dotenv').config();
 
 module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
       // The property ID; the tracking code won't be generated without it
-      trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "UA-153533173-1",
+      trackingId: "UA-153533173-1",
       // head: fase,
       // Setting this parameter is optional
       anonymize: true,
