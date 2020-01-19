@@ -47,7 +47,7 @@ const Staked = () => (
       }
     `}
     render={data => (
-      <Section id="brands" accent>
+      <Section id="networks" accent>
         <StyledContainer>
           <div>
             <h1>Currently Staking on</h1>
