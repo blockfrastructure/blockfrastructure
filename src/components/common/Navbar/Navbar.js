@@ -32,13 +32,11 @@ class Navbar extends Component {
     }
   };
 
-  getNavAnchorLink = item => {
-    return (
-      <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
-        {item}
-      </AnchorLink>
-    )
-  };
+  getNavAnchorLink = item => (
+    <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
+      {item}
+    </AnchorLink>
+  );
 
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile}>
