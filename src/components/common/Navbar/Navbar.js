@@ -33,7 +33,6 @@ class Navbar extends Component {
   };
 
   getNavAnchorLink = item => {
-    console.log('item', item)
     return (
       <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
         {item}
