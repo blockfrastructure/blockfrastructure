@@ -2,7 +2,6 @@ const path = require('path');
 
 module.exports = {
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -31,6 +30,7 @@ module.exports = {
       },
 
     },
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-svgr`,
       options: {
