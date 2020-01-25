@@ -5,7 +5,7 @@ import { Container } from '@components/global';
 export const Nav = styled.nav`
   padding: 16px 0;
   background-color: ${props => props.theme.color.primary};
-  position: fixed;
+  position: ${props => console.log('props----', props)};
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -26,8 +26,8 @@ export const NavListWrapper = styled.div`
     flex-direction: row;
 
     ${({ mobile }) =>
-      mobile &&
-      `
+    mobile &&
+    `
         flex-direction: column;
         margin-top: 1em;
 

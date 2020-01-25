@@ -8,7 +8,7 @@ const SEO_DATA = {
   author: 'ajayns',
   keywords: ['staking', 'cryptocurrency', 'investing', 'blockchain', 'bitcoin', 'blockfrastructure'],
   twitter: {
-    id: '@ajayns08',
+    id: '@BlockFrastructur',
     img: '',
   },
   facebook: {
