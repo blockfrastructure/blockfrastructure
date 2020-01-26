@@ -2,11 +2,19 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'Staking infrastructure and tooling for token holders of stake-based blockchains',
+  description:
+    'Staking infrastructure and tooling for token holders of stake-based blockchains',
   title: 'Blockfrastructure',
   url: '',
   author: 'ajayns',
-  keywords: ['staking', 'cryptocurrency', 'investing', 'blockchain', 'bitcoin', 'blockfrastructure'],
+  keywords: [
+    'staking',
+    'cryptocurrency',
+    'investing',
+    'blockchain',
+    'bitcoin',
+    'blockfrastructure',
+  ],
   twitter: {
     id: '@BlockFrastructur',
     img: '',

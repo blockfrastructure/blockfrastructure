@@ -74,13 +74,14 @@ const About = () => (
             <div>
               <h2>Build the Future</h2>
               <p>
-                We believe in helping to build out a future we would want ot live in. 
-                To help accomplish this goal we will be allotting 10% of our profits towards
-                OSS (open source software) this is not only limited to blockchain projects, beach and 
-                forest cleanups, and educating more people.
+                We believe in helping to build out a future we would want ot
+                live in. To help accomplish this goal we will be allotting 10%
+                of our profits towards OSS (open source software) this is not
+                only limited to blockchain projects, beach and forest cleanups,
+                and educating more people.
                 <br />
                 <br />
-                Join us on this endeavor. 
+                Join us on this endeavor.
                 {/* TODO: add in a page to better explain this */}
               </p>
             </div>
@@ -124,8 +125,8 @@ const Grid = styled.div`
     }
 
     ${props =>
-    props.inverse &&
-    `
+      props.inverse &&
+      `
         ${Art} {
           order: 2;
         }

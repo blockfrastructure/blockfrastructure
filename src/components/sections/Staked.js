@@ -5,8 +5,7 @@ import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
-import { Link } from "gatsby"
-
+import { Link } from 'gatsby';
 
 import { ReactComponent as KusamaLogo } from '@images/logos/kusama.svg';
 import { ReactComponent as CosmosLogo } from '@images/logos/cosmos.svg';
@@ -15,12 +14,12 @@ const LOGOS = [
   {
     logo: KusamaLogo,
     link: 'https://kusama.network/',
-    page: 'Kusama'
+    page: 'Kusama',
   },
   {
     logo: CosmosLogo,
     link: 'https://cosmos.network/',
-    page: 'stake-cosmos'
+    page: 'stake-cosmos',
   },
 ];
 
@@ -70,7 +69,7 @@ const Staked = () => (
                     flexDirection: 'column',
                   }}
                   key={link}
-                // href={link}
+                  // href={link}
                 >
                   {logo()}
                 </Link>

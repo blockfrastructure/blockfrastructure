@@ -57,10 +57,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/markdown-pages`,
+        name: "posts",
+        path: `${__dirname}/content/posts/`,
       },
     },
     `gatsby-transformer-sharp`,

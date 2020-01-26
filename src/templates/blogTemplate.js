@@ -1,27 +1,22 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react';
+import { graphql } from 'gatsby';
 import styled from 'styled-components';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
+import Layout from '@common/Layout';
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+
+export default function PageTemplate({ data: { mdx } }) {
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+    <Layout>
+      <div>
+        <h1>{mdx.frontmatter.title}</h1>
+        <h2>{mdx.frontmatter.date}</h2>
         <Wrapper>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <MDXRenderer>{mdx.body}</MDXRenderer>
         </Wrapper>
-
       </div>
-    </div>
-  )
+    </Layout>
+  );
 }
 
 const Wrapper = styled.div`
@@ -29,17 +24,17 @@ const Wrapper = styled.div`
   width: 95%;
   margin-left: auto;
   margin-right: auto;
-`
+`;
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
+  query BlogPostQuery($id: String) {
+    mdx(id: { eq: $id }) {
+      id
+      body
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
         title
+        path
       }
     }
   }
-`
+`;

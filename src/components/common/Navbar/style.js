@@ -26,8 +26,8 @@ export const NavListWrapper = styled.div`
     flex-direction: row;
 
     ${({ mobile }) =>
-    mobile &&
-    `
+      mobile &&
+      `
         flex-direction: column;
         margin-top: 1em;
 
