@@ -9,7 +9,7 @@ export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
       <div>
-        <h1>{mdx.frontmatter.title}</h1>
+        <Title>{mdx.frontmatter.title}</Title>
         <h2>{mdx.frontmatter.date}</h2>
         <Wrapper>
           <MDXRenderer>{mdx.body}</MDXRenderer>
@@ -19,11 +19,21 @@ export default function PageTemplate({ data: { mdx } }) {
   );
 }
 
+const Title = styled.h3`
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+`
+
 const Wrapper = styled.div`
   max-width: 700px;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
+  p {
+    color: black;
+    font-size: 1.3em;
+   }
 `;
 
 export const pageQuery = graphql`

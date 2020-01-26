@@ -57,7 +57,7 @@ const Staked = () => (
             <LogoGrid>
               {LOGOS.map(({ logo, link, page }) => (
                 <Link
-                  to={`/${page}`}
+                  to={`/blog/${page}`}
                   style={{
                     padding: '10px',
                     height: '200px',
@@ -69,7 +69,7 @@ const Staked = () => (
                     flexDirection: 'column',
                   }}
                   key={link}
-                  // href={link}
+                // href={link}
                 >
                   {logo()}
                 </Link>
