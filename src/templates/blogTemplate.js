@@ -3,11 +3,13 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '@common/Layout';
+import Navbar from '@common/Navbar';
 
 
 export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
+      <Navbar postNav />
       <div>
         <Title>{mdx.frontmatter.title}</Title>
         <h2>{mdx.frontmatter.date}</h2>
@@ -21,7 +23,7 @@ export default function PageTemplate({ data: { mdx } }) {
 
 const Title = styled.h3`
   text-align: center;
-  padding-top: 30px;
+  padding-top: 100px;
   padding-bottom: 30px;
 `
 

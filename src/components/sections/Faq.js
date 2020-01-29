@@ -25,7 +25,7 @@ const FAQS = [
         support opertions of a blockchain network. It locks the curreny in a
         wallet to review rewards. The concept of staking is closely related to
         Proof of Stake. You can learn more about that{' '}
-        <ExternalLink href="https://en.wikipedia.org/wiki/Proof_of_stake">
+        <ExternalLink href="https://lunie.io/guides/what-is-staking/">
           here.
         </ExternalLink>
       </>
