@@ -5,10 +5,10 @@ const SEO_DATA = {
   description: 'Staking infrastructure and tooling for token holders of stake-based blockchains',
   title: 'Blockfrastructure',
   url: '',
-  author: 'ajayns',
+  author: 'Blockfrastructure',
   keywords: ['staking', 'cryptocurrency', 'investing', 'blockchain', 'bitcoin', 'blockfrastructure'],
   twitter: {
-    id: '@ajayns08',
+    id: '@BlockFratructur',
     img: '',
   },
   facebook: {
