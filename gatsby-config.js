@@ -68,7 +68,14 @@ module.exports = {
       options: {
         name: "posts",
         path: `${__dirname}/content/posts/`,
-      },
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `brand`,
+        path: `${__dirname}/src/images/brand`,
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
