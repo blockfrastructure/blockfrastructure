@@ -1,19 +1,22 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { ReactComponent as FacebookOG } from '@images/brand/facebook_profile_image.png';
+import { ReactComponent as TwitterOG } from '@images/brand/twitter_profile_image.png';
+
 
 const SEO_DATA = {
   description: 'Staking infrastructure and tooling for token holders of stake-based blockchains',
   title: 'Blockfrastructure',
-  url: '',
-  author: 'ajayns',
-  keywords: ['staking', 'cryptocurrency', 'investing', 'blockchain', 'bitcoin', 'blockfrastructure'],
+  url: 'https://www.blockfrastructure.com',
+  author: 'Blockfrastructure',
+  keywords: ['staking', 'cryptocurrency', 'investing', 'blockchain', 'bitcoin', 'blockfrastructure', 'proof of stake'],
   twitter: {
-    id: '@ajayns08',
-    img: '',
+    id: '@BlockFratructur',
+    img: TwitterOG,
   },
   facebook: {
     id: '',
-    img: '',
+    img: FacebookOG,
   },
 };
 
@@ -28,8 +31,8 @@ const SEO = () => {
       <meta property="og:description" content={SEO_DATA.description} />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@hackinoutco" />
-      <meta name="twitter:site" content="@hackinoutco" />
+      <meta name="twitter:creator" content="@BlockFratructur" />
+      <meta name="twitter:site" content="@BlockFratructur" />
       <meta name="twitter:title" content={SEO_DATA.title} />
       <meta name="twitter:description" content={SEO_DATA.description} />
       <meta name="twitter:domain" content={SEO_DATA.url} />
