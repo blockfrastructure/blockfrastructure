@@ -10,7 +10,7 @@ export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
       <Navbar postNav />
-      <div>
+      <div style={{ paddingBottom: '50px' }}>
         <Title>{mdx.frontmatter.title}</Title>
         <h2>{mdx.frontmatter.date}</h2>
         <Wrapper>
@@ -25,6 +25,10 @@ const Title = styled.h3`
   text-align: center;
   padding-top: 100px;
   padding-bottom: 30px;
+`
+
+const Footer = styled.div`
+  padding-bottom: 50px;
 `
 
 const Wrapper = styled.div`
