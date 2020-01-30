@@ -7,13 +7,13 @@ import SEO from '@common/SEO';
 import theme from '@styles/theme';
 import GlobalStyles from '@styles/GlobalStyles';
 
-const Layout = (props) => {
+const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <>
         <SEO />
         <GlobalStyles />
-        {props.children}
+        {children}
       </>
     </ThemeProvider>
   )

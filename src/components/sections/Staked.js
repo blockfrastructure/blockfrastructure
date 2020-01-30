@@ -55,25 +55,46 @@ const Staked = () => (
           <div>
             <h1>Currently Staking on</h1>
             <LogoGrid>
-              {LOGOS.map(({ logo, link, page }) => (
-                <Link
-                  to={`/blog/${page}`}
-                  style={{
-                    padding: '10px',
-                    height: '200px',
-                    width: '200px',
-                    borderRadius: '50%',
-                    border: '2px solid white',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    flexDirection: 'column',
-                  }}
-                  key={link}
-                // href={link}
-                >
-                  {logo()}
-                </Link>
-              ))}
+              {LOGOS.map(({ logo, link, page }) => {
+                if (page === 'Kusama') { //TODO: remove quick and dirty
+                  return (
+                    <ExternalLink
+                      href={link}
+                      style={{
+                        padding: '10px',
+                        height: '200px',
+                        width: '200px',
+                        borderRadius: '50%',
+                        border: '2px solid white',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexDirection: 'column',
+                      }}
+                      key={link}
+                    >
+                      {logo()}
+                    </ExternalLink>
+                  )
+                }
+                return (
+                  <Link
+                    to={`/blog/${page}`}
+                    style={{
+                      padding: '10px',
+                      height: '200px',
+                      width: '200px',
+                      borderRadius: '50%',
+                      border: '2px solid white',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      flexDirection: 'column',
+                    }}
+                    key={link}
+                  >
+                    {logo()}
+                  </Link>
+                )
+              })}
             </LogoGrid>
           </div>
           <Art>
