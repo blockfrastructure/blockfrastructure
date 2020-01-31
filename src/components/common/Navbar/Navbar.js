@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
+import { Link } from 'gatsby';
+
 
 import { Container } from '@components/global';
 import {
@@ -15,7 +17,7 @@ import {
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
-const NAV_ITEMS = ['About', 'Networks', 'FAQ'];
+let NAV_ITEMS = ['About', 'Networks', 'FAQ'];
 
 class Navbar extends Component {
   state = {
@@ -38,20 +40,26 @@ class Navbar extends Component {
     </AnchorLink>
   );
 
-  getNavList = ({ mobile = false }) => (
-    <NavListWrapper mobile={mobile}>
-      <Scrollspy
-        items={NAV_ITEMS.map(item => item.toLowerCase())}
-        currentClassName="active"
-        mobile={mobile}
-        offset={-64}
-      >
-        {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
-        ))}
-      </Scrollspy>
-    </NavListWrapper>
-  );
+  getNavList = ({ mobile = false }) => {
+    const { postNav } = this.props;
+    if (postNav) { //anything but home
+      return null;
+    }
+    return (
+      <NavListWrapper mobile={mobile}>
+        <Scrollspy
+          items={NAV_ITEMS.map(item => item.toLowerCase())}
+          currentClassName="active"
+          mobile={mobile}
+          offset={-64}
+        >
+          {NAV_ITEMS.map(navItem => (
+            <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
+          ))}
+        </Scrollspy>
+      </NavListWrapper>
+    )
+  };
 
   render() {
     const { mobileMenuOpen } = this.state;
@@ -59,7 +67,7 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <Brand>Blockfrastructure</Brand>
+          <Link style={{ textDecoration: 'none' }}><Brand>Blockfrastructure</Brand></Link>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
               <MenuIcon />

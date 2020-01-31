@@ -2,19 +2,29 @@
 
 Install the dependencies:
 
-### `yarn install`
+### `npm install`
 
 Run the development server:
 
-### `yarn dev`
+### `npm run dev`
 
 Production build to `/public`:
 
-### `yarn build`
+### `npm run build`
 
 Cleanup cache (often fixes misc errors when run before `yarn dev`):
 
-### `yarn clean`
+### `npm run clean`
+
+
+## Markdown Pages
+Markdown pages go inside /markdown-pages. Make sure to add appropriate fontmatter for the graphql query. Everything inside ----
+
+```
+path: "/guides/stake-cosmos"
+date: "2019-05-04"
+title: "Staking with Blockfrastructure using the Lunie App"
+```
 
 ## Content
 
@@ -22,7 +32,7 @@ Each of the sections in the site are placed in `src/sections`. Data is usually s
 
 ## SEO
 
-The component `src/components/common/SEO.js` handles all meta data and SEO content, modify the `SEO_DATA` variable to add the data automatically. For application manifest data and favicon, modify the `gatsby-plugin-manifest` configuration in `gatsby-config.js`.
+The component `src/components/common/SEO.js` handles all meta data and SEO content, modify the `SEO_DATA` variable to add the data automatically. For application manifest data and favicon, modify the `gatsby-plugin-manifest` configuration in `gatsby-config.js`
 
 ## Styling
 

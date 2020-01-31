@@ -5,7 +5,8 @@ import { ReactComponent as TwitterOG } from '@images/brand/twitter_profile_image
 
 
 const SEO_DATA = {
-  description: 'Staking infrastructure and tooling for token holders of stake-based blockchains',
+  description:
+    'Staking infrastructure and tooling for token holders of stake-based blockchains',
   title: 'Blockfrastructure',
   url: 'https://www.blockfrastructure.com',
   author: 'Blockfrastructure',
