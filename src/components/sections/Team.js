@@ -65,7 +65,7 @@ const Team = () => (
               );
             })}
           </TeamGrid>
-          <br/>
+          <br />
           <Art>
             <Img fluid={data.art_team.childImageSharp.fluid} />
           </Art>
