@@ -5,14 +5,13 @@ import { ReactComponent as TwitterOG } from '@images/brand/twitter_profile_image
 
 
 const SEO_DATA = {
-  description:
-    'Staking infrastructure and tooling for token holders of stake-based blockchains',
+  description: 'Staking infrastructure and tooling for cryptocurrency users of stake-based blockchains',
   title: 'Blockfrastructure',
   url: 'https://www.blockfrastructure.com',
   author: 'Blockfrastructure',
-  keywords: ['staking', 'cryptocurrency', 'investing', 'blockchain', 'bitcoin', 'blockfrastructure', 'proof of stake'],
+  keywords: ['staking', 'cryptocurrency', 'investing', 'blockchain', 'bitcoin', 'blockfrastructure', 'proof of stake', 'cosmos', 'atom'],
   twitter: {
-    id: '@BlockFratructur',
+    id: '@BlockFrastructur',
     img: TwitterOG,
   },
   facebook: {

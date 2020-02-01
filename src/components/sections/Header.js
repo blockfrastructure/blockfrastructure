@@ -35,7 +35,8 @@ const Header = () => (
                 <br />
                 passive income
                 <br />
-                with crypto
+                staking cryptocurrency
+                <br />
               </h1>
               <br />
               <p>
