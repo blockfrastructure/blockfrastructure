@@ -2,7 +2,7 @@
   "name": "blockfrastructure",
   "private": true,
   "description": "We provide staking infrastructure and tooling for staking-based blockchains",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Mark Hinschberger",
   "dependencies": {
     "@mdx-js/mdx": "1.5.5",
