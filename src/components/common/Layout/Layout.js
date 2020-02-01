@@ -7,15 +7,17 @@ import SEO from '@common/SEO';
 import theme from '@styles/theme';
 import GlobalStyles from '@styles/GlobalStyles';
 
-const Layout = ({ children }) => (
-  <ThemeProvider theme={theme}>
-    <>
-      <SEO />
-      <GlobalStyles />
-      {children}
-    </>
-  </ThemeProvider>
-);
+const Layout = ({ children }) => {
+  return (
+    <ThemeProvider theme={theme}>
+      <>
+        <SEO />
+        <GlobalStyles />
+        {children}
+      </>
+    </ThemeProvider>
+  )
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

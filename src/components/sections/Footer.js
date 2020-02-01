@@ -10,7 +10,6 @@ import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
 
-
 // TODO: Add soon
 const SOCIAL = [
   {
@@ -71,8 +70,12 @@ const Footer = () => (
               ))}
             </SocialIcons> */}
             <ContactUs>
-              <ExternalLink href="mailto:blockfrastructure@gmail.com?Subject=Hello" target="_top">Contact Us</ExternalLink>
-
+              <ExternalLink
+                href="mailto:blockfrastructure@gmail.com?Subject=Hello"
+                target="_top"
+              >
+                Contact Us
+              </ExternalLink>
             </ContactUs>
           </StyledContainer>
         </FooterWrapper>
@@ -103,7 +106,7 @@ const ContactUs = styled.div`
     text-decoration: none;
     color: inherit;
   }
-`
+`;
 
 const FooterWrapper = styled.footer`
   background-color: ${props => props.theme.color.primary};

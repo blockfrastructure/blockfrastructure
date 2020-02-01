@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+import { Link } from 'gatsby';
 
 import { ReactComponent as KusamaLogo } from '@images/logos/kusama.svg';
 import { ReactComponent as CosmosLogo } from '@images/logos/cosmos.svg';
@@ -13,10 +14,12 @@ const LOGOS = [
   {
     logo: KusamaLogo,
     link: 'https://kusama.network/',
+    page: 'Kusama',
   },
   {
     logo: CosmosLogo,
     link: 'https://cosmos.network/',
+    page: 'stake-cosmos',
   },
 ];
 
@@ -52,24 +55,46 @@ const Staked = () => (
           <div>
             <h1>Currently Staking on</h1>
             <LogoGrid>
-              {LOGOS.map(({ logo, link }) => (
-                <ExternalLink
-                  style={{
-                    padding: '10px',
-                    height: '200px',
-                    width: '200px',
-                    borderRadius: '50%',
-                    border: '2px solid white',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    flexDirection: 'column',
-                  }}
-                  key={link}
-                  href={link}
-                >
-                  {logo()}
-                </ExternalLink>
-              ))}
+              {LOGOS.map(({ logo, link, page }) => {
+                if (page === 'Kusama') { //TODO: remove quick and dirty
+                  return (
+                    <ExternalLink
+                      href={link}
+                      style={{
+                        padding: '10px',
+                        height: '200px',
+                        width: '200px',
+                        borderRadius: '50%',
+                        border: '2px solid white',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexDirection: 'column',
+                      }}
+                      key={link}
+                    >
+                      {logo()}
+                    </ExternalLink>
+                  )
+                }
+                return (
+                  <Link
+                    to={`/blog/${page}`}
+                    style={{
+                      padding: '10px',
+                      height: '200px',
+                      width: '200px',
+                      borderRadius: '50%',
+                      border: '2px solid white',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      flexDirection: 'column',
+                    }}
+                    key={link}
+                  >
+                    {logo()}
+                  </Link>
+                )
+              })}
             </LogoGrid>
           </div>
           <Art>
