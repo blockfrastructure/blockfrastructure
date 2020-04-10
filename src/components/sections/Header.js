@@ -30,9 +30,9 @@ const Header = () => (
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
             <Text>
-              <h2 style={{ paddingBottom: '20px' }}>
+              {/* <h2 style={{ paddingBottom: '20px' }}>
                 Ontario Window Cleaning
-              </h2>
+              </h2> */}
               <h2>
                 Let the Sun Shine in
               </h2>

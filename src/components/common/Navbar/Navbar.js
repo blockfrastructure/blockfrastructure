@@ -17,7 +17,7 @@ import {
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
-let NAV_ITEMS = ['About', 'Team', 'FAQ'];
+let NAV_ITEMS = ['About', 'Team'];
 
 class Navbar extends Component {
   state = {
