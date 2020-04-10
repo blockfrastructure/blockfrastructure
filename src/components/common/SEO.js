@@ -5,7 +5,7 @@ import { ReactComponent as TwitterOG } from '@images/brand/twitter_profile_image
 
 
 const SEO_DATA = {
-  description: 'Staking infrastructure and tooling for cryptocurrency users of stake-based blockchains',
+  description: 'Residential and Commercial Window Cleaning in the Belleville and Quinte Area',
   title: 'Ontario Window Cleaning',
   url: 'https://www.blockfrastructure.com',
   author: 'Ontario Window Cleaning',
