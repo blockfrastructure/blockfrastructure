@@ -109,8 +109,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Blockfrastructure`,
-        short_name: `blockfrastructure`,
+        name: `Ontario Window Cleaning`,
+        short_name: `OWC`,
         start_url: `/`,
         background_color: `#8bd8ed`,
         theme_color: `#8bd8ed`,

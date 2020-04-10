@@ -53,7 +53,7 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Blockfrastructure</h2>
+              <h2>Ontario Window Cleaning</h2>
               <span>
                 Illustrations by
                 {` `}
@@ -71,10 +71,10 @@ const Footer = () => (
             </SocialIcons> */}
             <ContactUs>
               <ExternalLink
-                href="mailto:blockfrastructure@gmail.com?Subject=Hello"
+                href="mailto:kevinhinschberger@gmail.com?Subject=Hello"
                 target="_top"
               >
-                Contact Us
+                Get a quote today!
               </ExternalLink>
             </ContactUs>
           </StyledContainer>

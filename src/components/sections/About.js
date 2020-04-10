@@ -48,10 +48,9 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>The simplest way to earn crypto</h2>
+              <h3 style={{ marginBottom: '10px' }}>Serving the Belleville and Quinte area for 30 years</h3>
               <p>
-                Earn returns up to 12% annually on your deposit for staking with
-                us. Create savings and build for the future.
+                We are a family owned and operated business and have been serving Belleville, Trenton, Brighton and Campelford area for 30+ years.
               </p>
             </div>
             <Art>
@@ -63,15 +62,14 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Be ahead of the curve</h2>
+              <h2>Our Services</h2>
               <p>
-                Earn crypto for supporting validators of blockchain networks.
-                Stake with us to build the future we deserve.
+                Residential and commericial window cleaning. Give us a call today at 613-966-4462 to a get a quote!
               </p>
             </div>
           </Grid>
           <Grid>
-            <div>
+            {/* <div>
               <h2>Build the Future</h2>
               <p>
                 We believe in helping to build out a future we would want to live in.
@@ -81,12 +79,11 @@ const About = () => (
                 <br />
                 <br />
                 Join us on this endeavor.
-                {/* TODO: add in a page to better explain this */}
               </p>
-            </div>
-            <Art>
+            </div> */}
+            {/* <Art>
               <Img fluid={data.art_ideas.childImageSharp.fluid} />
-            </Art>
+            </Art> */}
           </Grid>
         </Container>
       </Section>

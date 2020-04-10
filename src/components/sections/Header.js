@@ -30,14 +30,12 @@ const Header = () => (
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
             <Text>
-              <h1>
-                Earn a
-                <br />
-                passive income
-                <br />
-                staking cryptocurrency
-                <br />
-              </h1>
+              <h2 style={{ paddingBottom: '20px' }}>
+                Ontario Window Cleaning
+              </h2>
+              <h2>
+                Let the Sun Shine in
+              </h2>
               <br />
               <p>
                 {/* <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
@@ -47,7 +45,7 @@ const Header = () => (
             </Text>
           </Grid>
         </Container>
-      </HeaderWrapper>
+      </HeaderWrapper >
     )}
   />
 );

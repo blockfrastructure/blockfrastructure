@@ -7,14 +7,14 @@ import { Section, Container } from '@components/global';
 
 const TEAM = [
   {
-    name: 'Mark Hinschberger',
+    name: 'Kevin Hinschberger',
     image: 'josh.jpg',
     role: 'Founder',
   },
   {
-    name: 'Marko Baricevic',
+    name: 'Nate',
     image: 'todd.jpg',
-    role: 'Founder',
+    role: 'Window Cleaner',
   },
 ];
 
